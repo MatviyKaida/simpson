@@ -41,4 +41,4 @@ with open("inNopt.txt", "w") as file:
     # Оптимальне значення N
     Nopt = N
     epsopt = abs(Integral(Nopt) - I0)
-    print(f"Nopt = {Nopt} \t epsopt = {epsopt}\n{Integral(N)}\n{I0}")
+    print(f"Nopt = {Nopt} \t epsopt = {epsopt}\nCalculated: {Integral(N)}\nAccurate: {I0}")
