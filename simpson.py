@@ -1,8 +1,8 @@
 import numpy as np
 
 # Глобальні змінні
-a = -4
-b = 4
+a = -10
+b = 10
 h = 0
 eps = 1e-8
 
@@ -41,4 +41,4 @@ with open("inNopt.txt", "w") as file:
     # Оптимальне значення N
     Nopt = N
     epsopt = abs(Integral(Nopt) - I0)
-    print(f"Nopt = {Nopt} \t epsopt = {epsopt}\n")
+    print(f"Nopt = {Nopt} \t epsopt = {epsopt}\nCalculated: {Integral(N)}\nAccurate: {I0}")
